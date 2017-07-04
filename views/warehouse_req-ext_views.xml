@@ -13,7 +13,7 @@
           	<field name="product_type_req" string="Product Type" attrs="{'readonly':[('state', 'not in', ['draft','required'])]}"/>
       </xpath>
       <xpath expr="//field[@name='picking_type_id']" position="after">
-                <field name="is_manufactured" string="Fabricar" attrs="{'invisible':[('state', 'not in', ['approved','partial_supplied','done'])]}" groups="warehouse_req.admin"/>
+                <field name="is_manufactured" string="Is Manufactured" attrs="{'invisible':[('state', 'not in', ['approved','partial_supplied','done'])]}" groups="warehouse_req.admin"/>
       </xpath>
       </field>
     </record>
@@ -27,7 +27,7 @@
 	        <field name="product_type_req" string="Product Type"/>
       </xpath>
       <xpath expr="//field[@name='product_type_req']" position="after">
-                <field name="is_manufactured" string="Fabricar"/>
+                <field name="is_manufactured" string="Is Manufactured""/>
       </xpath>	
       </field>
     </record>

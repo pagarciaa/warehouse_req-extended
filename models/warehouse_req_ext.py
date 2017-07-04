@@ -15,4 +15,6 @@ class WarehouseReqExt(models.Model):
 	help=_("Products types to require"),
 	)
 
-    is_manufactured  = fields.Boolean()
+    is_manufactured  = fields.Boolean(
+	help=_("Indicates whether a product needs to be manufactured")
+	)
