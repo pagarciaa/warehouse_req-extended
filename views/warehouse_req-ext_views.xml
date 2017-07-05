@@ -27,7 +27,7 @@
 	        <field name="product_type_req" string="Product Type"/>
       </xpath>
       <xpath expr="//field[@name='product_type_req']" position="after">
-                <field name="is_manufactured" string="Is Manufactured""/>
+                <field name="is_manufactured" string="Is Manufactured"/>
       </xpath>	
       </field>
     </record>
