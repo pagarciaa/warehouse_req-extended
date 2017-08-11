@@ -7,7 +7,10 @@
       <field name="inherit_id" ref="warehouse_req.warehouse_req_form_view"/>
       <field name="arch" type="xml">
       <xpath expr="//button[@name='generate_stock_picks']" position="attributes">
-		<attribute name="groups">warehouse_req.admin,stock.group_stock_user</attribute>                
+          <attribute name="groups">warehouse_req.admin,warehouse_req.gen_stock_picks</attribute>                
+      </xpath>
+      <xpath expr="//button[@name='action_check_state']" position="attributes">
+          <attribute name="groups">warehouse_req.admin,warehouse_req.gen_stock_picks</attribute>
       </xpath>
       <xpath expr="//field[@name='deliver_address']" position="after">
           	<field name="product_type_req" string="Product Type" attrs="{'readonly':[('state', 'not in', ['draft','required'])]}"/>
@@ -28,10 +31,10 @@
       </xpath>
       <xpath expr="//field[@name='product_type_req']" position="after">
                 <field name="is_manufactured" string="Is Manufactured"/>
-      </xpath>	
+      </xpath>
       </field>
     </record>
-    
+
     <!--Add another submenu at Inventory/Inventory Control/Repaired Products-->
     <record model="ir.actions.act_window" id="warehouse_req_list_action2">
       <field name="name">Repaired Products</field>
