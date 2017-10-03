@@ -21,7 +21,7 @@
       </field>
     </record>
 	  
-	<record model="ir.ui.view" id="course_search_view">
+	<record model="ir.ui.view" id="warehouse_req_search_view">
             <field name="name">warehouse.req.select</field>
             <field name="model">warehouse.req</field>
             <field name="arch" type="xml">
