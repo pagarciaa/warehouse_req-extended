@@ -20,6 +20,17 @@
       </xpath>
       </field>
     </record>
+	  
+	<record model="ir.ui.view" id="course_search_view">
+            <field name="name">warehouse.req.select</field>
+            <field name="model">warehouse.req</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="reference_folio"/>
+                </search>
+            </field>
+        </record>
 
     <record model="ir.ui.view" id="warehouse_req_tree_view-ext">
       <field name="name">warehouse.req.form</field>
